@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			<%=title %>
+		</title>
+		<link rel="stylesheet" type="text/css" href="/materialize/dist/css/materialize.min.css" />
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+
+	<body id="box">
+		<div>
+			<h3 class="right-align"><%= title %></h3>
+			<div class="row " >
+				<div class="col l3 offset-l9 m6 offset-m6 s6 offset-s6 height-main card-panel toolbar" style="opacity: 0.01;">
+					<div class="row">
+						<div class="col l12 s12 m12" style="display: inline-block;">
+							<p class="range-field">
+								<input type="range" min="0" max="100" value="60" id="volume" />
+							</p>
+							<p>
+								<input name="drawtype" type="radio" class="drawtype" id="column" value="column"/>
+								<label for="column">Column</label>&nbsp;
+								<input name="drawtype" type="radio" class="drawtype" id="dot" value="dot"/>
+								<label for="dot">Dot</label>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l12 m12 s12 collection" id="music-list">
+							<% music.forEach(function(name) {%>
+								<a href="#!" class="collection-item" title="<%=name%>"><%=name%></a>
+							<%})%>
+						</div>
+					</div>
+				</div>
+				<div class="col l8 offset-l1 m5 offset-m1 s5 offset-s1" >
+					
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<script src="/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/materialize/dist/js/materialize.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/javascripts/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,16 @@
+::-webkit-scrollbar{width:0px}
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+body {
+  padding: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
+.height-main {
+	height: 400px;
+	overflow: auto;
+	
+}
